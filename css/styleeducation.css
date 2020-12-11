@@ -141,11 +141,7 @@ footer{
   .grid>header{
     min-height: 55px;
   }
-
-  nav{
-    text-align: right;
-  }
-
+  
   .grid > ul{
     font-size: 18px;
   }
@@ -153,7 +149,12 @@ footer{
 footer{
   position:static;
 }
-
+  
+@ media screen and (min-width: 800px){
+  nav{
+    text-align: right;
+  }
+  
 @media screen and (min-width: 900px){
   footer{
     position: fixed;
