@@ -1,0 +1,160 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #566c73;
+}
+
+a.Skip {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.Skip:focus, a.Skip:active {
+    color: #fff;
+    background-color:#334045;
+    left: auto;
+    top: auto;
+    width: 20%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+#nav_bar ul li a.active-page{
+  background-color: rgba(255,255,255,0.7);
+  padding: 15px 15px 15px 15px;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+
+}
+
+nav a{
+  color: #2B2D2F;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+nav{
+  background-color: #add8e6;
+  padding: 25px 0;
+  text-align: left;
+  vertical-align: middle;
+  width:100%
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+header{
+  font-size: 72px;
+  color:white;
+  text-align: center;
+}
+
+.box{
+  min-height: 30px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid{
+  margin: 12px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 7px;
+  padding: 0px 0 20px 0px;
+  flex-basis: 300px;
+  min-height: 300px;
+}
+
+.grid>header{
+  color: #334045;
+  background-color: #add8e6;
+  border: 2px solid #334045;
+  padding: 10px 10px;
+  border-radius: 7px 7px 0px 0px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.grid > ul{
+  list-style:inherit;
+  padding: 10px;
+}
+
+.grid > ul li {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.grid>h3{
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.grid>img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+footer{
+  background-color: #add8e6;
+  padding-top: 5px;
+  text-align: center;
+  position: static;
+  bottom:0;
+  width: 100%;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 600px){
+  .grid{
+    min-height: 616px;
+  }
+
+  .grid>h3{
+    font-size: 30px;
+  }
+
+  .grid>header{
+    min-height: 55px;
+  }
+
+  nav{
+    text-align: right;
+  }
+
+  .grid > ul{
+    font-size: 18px;
+  }
+
+footer{
+  position:static;
+}
+
+@media screen and (min-width: 900px){
+  footer{
+    position: fixed;
+  }
+}

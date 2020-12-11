@@ -1,0 +1,143 @@
+html{
+  scroll-behavior: smooth;
+}
+
+a.Skip {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.Skip:focus, a.Skip:active {
+    color: #fff;
+    background-color:#334045;
+    left: auto;
+    top: auto;
+    width: 20%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+#nav_bar ul li a.active-page{
+  background-color: rgba(255,255,255,0.7);
+  padding: 15px 15px 15px 15px;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+
+}
+
+nav a{
+  color: #2B2D2F;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+nav{
+  background-color: #add8e6;
+  padding: 25px 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+footer {
+  background-color: #add8e6;
+  padding-top: 5px;
+  text-align: center;
+  position: static;
+  bottom:0;
+  width: 100%;
+  font-size: 15px;
+}
+
+header{
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;
+  background-image: url("../images/baby.jpeg");
+  opacity: 0.7;
+}
+
+h1{
+  font-size: 72px;
+  line-height: 1;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.one-line{
+  font-size: 30px;
+  text-align: center
+}
+
+.text-block {
+  border: 10px solid #000000;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+}
+p{
+  padding-bottom: 30px;
+}
+h2{
+  font-size: 30px;
+}
+
+.gallery{
+  min-height: 700px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  align-items: baseline;
+  /*Your code here again.*/
+}
+
+.gallery > img{
+  border: 10px #566c73 solid;
+  border-radius: 8px;
+  margin: 10px;
+  width: 300px;
+}
+
+.gallery >img:hover {
+  opacity: 0.5;
+}
+
+#gallery{
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+
+@media screen and (min-width: 900px){
+  nav{
+    text-align: right;
+  }
+
+  .text-block {
+    font-size: 30px;
+  }
+
+  .one-line {
+    font-size: 40px;
+  }
